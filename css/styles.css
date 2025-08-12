@@ -1,0 +1,59 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Montserrat:wght@300;400;500;600&display=swap');
+
+/* Variáveis */
+:root {
+  --light-bg: #f8f5f2;
+  --dark-text: #333;
+}
+
+/* Estilos base */
+body {
+  font-family: 'Montserrat', sans-serif;
+  scroll-behavior: smooth;
+  background-color: var(--light-bg);
+  color: var(--dark-text);
+}
+
+.font-serif {
+  font-family: 'Playfair Display', serif;
+}
+
+/* Componentes */
+.header {
+  background: white;
+  position: sticky;
+  top: 0;
+  z-index: 50;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+}
+
+.hero {
+  height: 100vh;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+/* Efeitos e animações */
+.product-card:hover .product-overlay {
+  opacity: 1;
+}
+
+.product-overlay {
+  transition: all 0.3s ease;
+}
+
+.collection-animation {
+  animation: float 6s ease-in-out infinite;
+}
+
+@keyframes float {
+  0% { transform: translateY(0px); }
+  50% { transform: translateY(-15px); }
+  100% { transform: translateY(0px); }
+}
+
+/* ... (outros estilos específicos conforme necessário) ... */
